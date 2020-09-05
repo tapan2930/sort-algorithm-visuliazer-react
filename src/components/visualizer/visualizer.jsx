@@ -10,7 +10,7 @@ class Visualizer extends React.Component {
     super(props);
     this.state = {
       speed: 1000,
-      arraySize: 60,
+      arraySize: 80,
       randomNumbers: [],
       divs: [],
       divs_value: [],
@@ -64,7 +64,7 @@ class Visualizer extends React.Component {
           <div className="configuration-section" id="configuration-section-id">
           <div className="slidecontainer">
             <span className="slider-label">Array Range:</span>
-            <input className="slider" type="range" min="20" max="100" value={this.state.arraySize} id="myRange" onChange={(e) => this.onChange_ArraySizeSlider(e)} />
+            <input className="slider" type="range" min="20" max="150" value={this.state.arraySize} id="myRange" onChange={(e) => this.onChange_ArraySizeSlider(e)} />
           </div>
             <button className="button" onClick={(e) => this.animatorCallback("merge")}>
               Merge Sort
