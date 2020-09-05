@@ -93,3 +93,24 @@
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+@media only screen and (max-width: 700px) {
+  .slidecontainer{
+    display: block;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    padding: 10px;
+    color: #1b263b;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 2px 2px 4px #80808073;
+      margin-right: 10px;
+      font-size: 14px;
+      font-weight: 300;
+  }
+}
