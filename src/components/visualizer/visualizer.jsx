@@ -146,19 +146,19 @@ let selection = (array) => {
           divs[animations[i][1]].style.backgroundColor = "#282a36";
           divs[animations[i][0]].style.height = h2;
           divs[animations[i][1]].style.height = h1;
-        }, i * 3);
+        }, i * 10);
       }
       if (animations[i][2] === 3) {
         setTimeout(() => {
           divs[animations[i][0]].style.backgroundColor = "282a36";
           divs[animations[i][1]].style.backgroundColor = "282a36";
-        }, i * 3);
+        }, i * 10);
       }
       if (animations[i][2] === 4) {
         setTimeout(() => {
           divs[animations[i][0]].style.backgroundColor = "#ff5c57";
           divs[animations[i][1]].style.backgroundColor = "#ff5c57";
-        }, i * 3);
+        }, i * 10);
       }
     }
 
