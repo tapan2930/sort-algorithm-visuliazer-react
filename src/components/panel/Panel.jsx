@@ -17,7 +17,7 @@ class Panel extends React.Component {
     return (
       <div className="panel">     
           <img className="logo" src={logo} alt="logo" width="60"/>
-          <h1>Sort Algorithm Visualizer</h1>
+          <h1>Sorting Algorithm Visualizer</h1>
         </div>
     );
   }
