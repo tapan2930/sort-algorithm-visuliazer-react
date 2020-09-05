@@ -1,0 +1,16 @@
+.panel {
+  text-align: center;
+  display: block;
+  height: 70px;
+  background: #3B4964;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h1{
+  position: relative;
+  top: -15px;
+  color: cornsilk;
+  font-weight: 300;
+  display: inline;
+}
+
