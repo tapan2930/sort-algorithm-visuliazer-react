@@ -24,5 +24,7 @@ function selectionSort(array,animations){
         array[k] = temp
         animations.push([i,k,4])
     }
+    console.log(array);
+    console.log(animations);
     return animations
 }

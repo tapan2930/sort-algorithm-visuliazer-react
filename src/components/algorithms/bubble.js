@@ -12,15 +12,16 @@ function bubbleSortHelper(array, animations){
     for(i = 0; i< array.length; i++){
         for(j = 0; j< array.length -i -1; j++){
             if(array[j] > array[j+1]){
-                animations.push([j,j+1,2]) //Red
+                animations.push([j,j+1,2]) //Black
                 let temp = array[j]
                 array[j] = array[j+1]
                 array[j+1] = temp
             }
-            animations.push([j,j+1,3]) //Blue    
+            animations.push([j,j+1,3]) //Red    
         }
-        animations.push([j,j,4]) //Green    
+        animations.push([j,j,3]) //Red    
     }
     console.log(array);
+    console.log(animations);
     return animations
 }

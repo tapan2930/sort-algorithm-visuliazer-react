@@ -64,7 +64,7 @@ class Visualizer extends React.Component {
           <div className="configuration-section" id="configuration-section-id">
           <div className="slidecontainer">
             <span className="slider-label">Array Range:</span>
-            <input className="slider" type="range" min="20" max="150" value={this.state.arraySize} id="myRange" onChange={(e) => this.onChange_ArraySizeSlider(e)} />
+            <input className="slider" type="range" min="20" max="110" value={this.state.arraySize} id="myRange" onChange={(e) => this.onChange_ArraySizeSlider(e)} />
           </div>
             <button className="button" onClick={(e) => this.animatorCallback("merge")}>
               Merge Sort
@@ -122,12 +122,6 @@ let bubble = (array) => {
         divs[animations[i][1]].style.backgroundColor = "#ff5c57";
       }, i * 2);
     }
-    if (animations[i][2] === 4) {
-      setTimeout(() => {
-        divs[animations[i][0]].style.backgroundColor = "#ff5c57";
-        divs[animations[i][1]].style.backgroundColor = "#ff5c57";
-      }, i * 2);
-    }
   }
 
 };
@@ -150,8 +144,8 @@ let selection = (array) => {
       }
       if (animations[i][2] === 3) {
         setTimeout(() => {
-          divs[animations[i][0]].style.backgroundColor = "282a36";
-          divs[animations[i][1]].style.backgroundColor = "282a36";
+          divs[animations[i][0]].style.backgroundColor = "#282a36";
+          divs[animations[i][1]].style.backgroundColor = "#282a36";
         }, i * 10);
       }
       if (animations[i][2] === 4) {
